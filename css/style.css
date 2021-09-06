@@ -442,7 +442,7 @@ body {
 #Contact .head {
   text-align: start;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   position: relative;
 }
 
@@ -604,6 +604,11 @@ footer #wrapper div i.icon {
   #spotlight .side-bar-right {
     display: none;
   }
+  #spotlight #main {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
   #spotlight #main .container h1.Head {
     font-size: 42px;
   }
@@ -623,13 +628,13 @@ footer #wrapper div i.icon {
             filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
-    width: 100%;
-    height: 100vh;
     z-index: 1;
     opacity: 0;
   }
   #spotlight .overlay.open {
     opacity: 1;
+    width: 100%;
+    height: 100vh;
   }
   #spotlight header {
     padding-top: 20px;
@@ -638,7 +643,7 @@ footer #wrapper div i.icon {
   }
   #spotlight header .humburger {
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 10%;
     cursor: pointer;
     z-index: 3;
@@ -770,8 +775,7 @@ footer #wrapper div i.icon {
     font-size: 20px;
   }
   #About .flex .right {
-    width: 200px;
-    height: 200px;
+    display: none;
   }
 }
 

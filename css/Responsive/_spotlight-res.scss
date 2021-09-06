@@ -99,6 +99,7 @@ $font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
       display: none;
     }
     #main {
+      justify-content: flex-start;
       .container {
         h1.Head {
           font-size: 42px;
@@ -120,13 +121,13 @@ $font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
       background-color: rgba(0, 0, 0, 0.205);
       filter: blur(5px);
       backdrop-filter: blur(5px);
-      width: 100%;
-      height: 100vh;
       z-index: 1;
       opacity: 0;
     }
     .overlay.open {
       opacity: 1;
+      width: 100%;
+      height: 100vh;
     }
     header {
       padding-top: 20px;
@@ -134,7 +135,7 @@ $font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
       z-index: 2;
       .humburger {
         position: absolute;
-        top: 20px;
+        top: 30px;
         right: 10%;
         cursor: pointer;
         z-index: 3;
