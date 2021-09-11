@@ -9,6 +9,18 @@ html {
           box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  background-color: #989dac5d;
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #64ffda;
+  border-radius: 100px;
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+}
+
 a {
   text-decoration: none;
 }
@@ -33,7 +45,7 @@ body {
   background-color: #161b22;
   color: #dcdde4;
   position: relative;
-  cursor: cell;
+  cursor: url("../images/cursor.svg"), auto;
 }
 
 .clicked {
@@ -44,6 +56,24 @@ body {
   -webkit-animation: clicked 0.6s linear;
           animation: clicked 0.6s linear;
   border-radius: 50%;
+}
+
+.success {
+  font-size: 12px;
+  color: #64ffda;
+}
+
+.error {
+  font-size: 12px;
+  color: red;
+}
+
+a.error {
+  font-size: 15px;
+  margin: 0 auto;
+  background-color: rgba(100, 255, 218, 0.1);
+  width: 70px;
+  color: #64ffda;
 }
 
 #spotlight header {
@@ -442,7 +472,7 @@ body {
 #Contact .head {
   text-align: start;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   position: relative;
 }
 
@@ -467,7 +497,6 @@ body {
 }
 
 #Contact h2 {
-  margin-top: 20px;
   margin-bottom: 30px;
   font-size: 38px;
 }
@@ -475,7 +504,7 @@ body {
 #Contact p {
   margin: 0 auto;
   max-width: 500px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 #Contact a.button {
@@ -492,19 +521,59 @@ body {
   background-color: rgba(100, 255, 218, 0.1);
 }
 
+#Contact form.contact {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 500px;
+}
+
+#Contact form.contact input,
+#Contact form.contact textarea,
+#Contact form.contact button {
+  padding: 10px 10px;
+  background-color: #21262d;
+  border: none;
+  outline: none;
+  margin: 10px 0;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#Contact form.contact .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#Contact form.contact button {
+  margin: 5px;
+  width: 50%;
+}
+
+#Contact form.contact button:hover {
+  color: #64ffda;
+  background-color: rgba(100, 255, 218, 0.1);
+}
+
 footer {
   font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
 }
 
 footer #wrapper {
-  height: 90px;
+  height: 130px;
   text-align: center;
 }
 
 footer #wrapper h3 {
   color: #a8b2d1;
   font-weight: 400;
-  padding-top: 20px;
+  padding-top: 50px;
   font-size: 12px;
 }
 

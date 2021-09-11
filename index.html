@@ -23,9 +23,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- email js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/integration
+        emailjs.init("user_LolEfhpUOVXwKIDhlrrYN");
+      })();
+    </script>
+    <script src="./js/emaljs.js" type="text/javascript"></script>
     <title>Musadhiq | FrontEnd Dev</title>
   </head>
   <body>
+    <div class="cursor"></div>
     <section id="spotlight">
       <div class="overlay"></div>
       <header>
@@ -346,9 +360,37 @@
             is always open. Whether you have a question or just want to say hi,
             I’ll try my best to get back to you!
           </p>
-          <a href="https://wa.me/919946590386?text=hi" class="button"
+          <!-- <a href="https://wa.me/919946590386?text=hi" class="button"
             >Say Hi!</a
-          >
+          > -->
+
+          <form class="contact" id="contact-form">
+            <input type="hidden" name="contact_number" />
+            <input
+              type="text"
+              placeholder="Enter Your Name"
+              name="user_name"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              name="user_email"
+              required
+            />
+            <textarea
+              placeholder="Enter Message"
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+            <div class="buttons">
+              <button type="reset">reset</button>
+              <button type="submit" value="Send">Send</button>
+            </div>
+          </form>
         </div>
       </section>
     </section>

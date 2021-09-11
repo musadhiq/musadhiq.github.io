@@ -6,7 +6,7 @@
   .head {
     text-align: start;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     position: relative;
     h1 {
       font-family: $font-mono;
@@ -27,14 +27,13 @@
     }
   }
   h2 {
-    margin-top: 20px;
     margin-bottom: 30px;
     font-size: 38px;
   }
   p {
     margin: 0 auto;
     max-width: 500px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   a.button {
     font-family: $font-mono;
@@ -46,6 +45,34 @@
     font-weight: 600;
     &:hover {
       background-color: $green-tint;
+    }
+  }
+  form.contact {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    input,
+    textarea,
+    button {
+      padding: 10px 10px;
+      background-color: $VeryLightbalck;
+      border: none;
+      outline: none;
+      margin: 10px 0;
+      color: #fff;
+      border-radius: 5px;
+    }
+    .buttons {
+      display: flex;
+    }
+    button {
+      margin: 5px;
+      width: 50%;
+      &:hover {
+        color: $green;
+        background-color: $green-tint;
+      }
     }
   }
 }

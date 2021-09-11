@@ -25,7 +25,7 @@ body.addEventListener("click", (e) => {
 
   setTimeout(() => {
     document.body.removeChild(clicker);
-  }, 600);
+  }, 590);
 });
 
 // nav
